@@ -12,13 +12,13 @@ gem "matrix"
 
 group :development do
   gem "apparition", github: "twalpole/apparition"
-  gem "activesupport", "~> 6.1"
+  gem "activesupport", "~> 8.0", ">= 8.0.5.2"
   gem "aruba"
   gem "capybara"
   if RUBY_VERSION < "2.7"
     gem "rack", "< 3"
   else
-    gem "rackup"
+    gem "rackup", ">= 2.3.0"
   end
   gem "cucumber"
   gem "minitest"
